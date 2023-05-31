@@ -1,14 +1,14 @@
-package com.inno.trainee.dto.request;
+package com.inno.trainee.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import java.time.LocalDateTime;
 
 
 public record CountryPeriodDTO(@JsonAlias({"countryName", "CountryName"})
-                            String countryName,
+                               String countryName,
                                @JsonAlias({"dateFrom", "DateFrom"})
-                            LocalDateTime dateFrom,
+                               LocalDateTime dateFrom,
                                @JsonAlias({"dateTo", "DateTo"})
-                            LocalDateTime dateTo) {
+                               LocalDateTime dateTo) {
 
 }
